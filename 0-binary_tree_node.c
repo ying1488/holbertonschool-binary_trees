@@ -8,7 +8,7 @@
  *@parent: pointer to parent
  *@value: value to put in the new node
  *Return: the node
- */ 
+ */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
@@ -17,7 +17,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	/*if allocation works ?*/
 	if (newNodes == NULL)
-		return(NULL);
+		return (NULL);
 
 	/**Setup node structure*/
 	newNodes->n = value;
