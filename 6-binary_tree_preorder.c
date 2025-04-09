@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "binary_trees.h"
 
 /**
@@ -13,7 +14,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	/*preorder : Root-> L -> R*/
 
-	if (tree || func == NULL)
+	if (tree == NULL || func == NULL)
 		return;
 	func(tree->n);
 	binary_tree_preorder(tree->left, func);
