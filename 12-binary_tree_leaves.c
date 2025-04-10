@@ -12,7 +12,7 @@
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	/*is it a real node? */
-	if (tree != NULL)
+	if (tree == NULL)
 	{
 		return (0);
 	}
